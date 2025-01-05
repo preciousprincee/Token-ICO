@@ -1,122 +1,88 @@
-# How to Build and Deploy Your Token Presale DApp (ICO) in 2024 - 2025
+Token ICO DApp
+🚀 A decentralized application (DApp) for creating and managing token ICOs (Initial Coin Offerings), showcasing advanced blockchain development and Web3 integration skills.
 
-How to Build and Deploy Your Token Presale DApp (ICO) in 2024 - 2025
+Features
+User Features
+Purchase tokens directly via the DApp.
+View detailed information about the tokens, including price and availability.
+Transfer ETH or donate funds to the platform.
+Admin Features
+Secure admin login for exclusive functionalities.
+Update token price dynamically.
+Modify the token contract address when necessary.
+Withdraw all tokens if you are the token owner.
+Tech Stack
+Solidity: Smart contract development.
+Next.js & React.js: Front-end development for a modern and responsive UI.
+ethers.js: Web3 integration for seamless communication with the blockchain.
+Holesky Testnet: Deployed on the Holesky network for testing and showcasing.
+Installation
+Prerequisites
+Node.js (v14 or higher)
+MetaMask for blockchain interaction.
+Hardhat for smart contract development and deployment.
+Clone the Repository
+bash
+Copy code
+git clone https://github.com/your-username/token-ico-dapp.git  
+cd token-ico-dapp  
+Install Dependencies
+bash
+Copy code
+npm install  
+Environment Variables
+Create a .env file in the project root and add the following:
 
-In this comprehensive tutorial, we'll guide you through the process of building and deploying your very own Token Presale DApp (ICO) in 2024. Whether you're a seasoned developer or new to blockchain, this video covers everything you need to know to get your token presale up and running.
+env
+Copy code
+NEXT_PUBLIC_ALCHEMY_API_KEY=your-alchemy-key  
+PRIVATE_KEY=your-wallet-private-key  
+CONTRACT_ADDRESS=deployed-smart-contract-address  
+Usage
+1. Deploy Smart Contract
+Navigate to the smart-contract directory and deploy the contract using Hardhat:
 
-🔍 In This Video:
+bash
+Copy code
+npx hardhat run scripts/deploy.js --network holesky  
+2. Start the Front-End
+Run the front-end locally:
 
-- Introduction to ICOs and Token Presales - Understand the basics and importance of ICOs and how they help in raising funds for your project.
-- Setting Up Your Development Environment - Learn how to prepare your tools and environment for blockchain development.
-- Smart Contract Development - Step-by-step guide to writing, deploying, and verifying your ERC-20 token and presale contracts.
-- Creating the Frontend DApp - How to build a user-friendly interface for investors to participate in your token presale.
-- Integrating MetaMask and Wallets - Ensure seamless integration with MetaMask and other popular wallets.
-- Security Best Practices - Tips and best practices to secure your smart contracts and DApp.
-- Deploying Your ICO - Final steps to deploy your presale DApp and go live.
+bash
+Copy code
+npm run dev  
+Visit http://localhost:3000 to interact with the DApp.
 
-## Project Overview
+Project Structure
+bash
+Copy code
+├── contracts/        # Solidity smart contracts  
+├── pages/            # Next.js pages  
+├── components/       # React components  
+├── scripts/          # Deployment scripts  
+├── styles/           # CSS/SCSS for styling  
+├── .env              # Environment variables  
+├── README.md         # Project documentation  
+Smart Contract Details
+The smart contract is built to handle token purchases, token price updates, and admin-controlled functionalities.
+Includes security best practices to prevent unauthorized access.
+Deployment
+The project is currently deployed on the Holesky Testnet.
 
-![alt text](https://www.daulathussain.com/wp-content/uploads/2024/05/Build-and-deploy-token-presale-ico-dapp.png)
+Smart Contract Address: your-contract-address
+Contributing
+Contributions are welcome! Please follow these steps:
 
-Kindly follow the following Instructions to run the project in your system and install the necessary requirements
+Fork the repository.
+Create a new branch for your feature (git checkout -b feature-name).
+Commit your changes (git commit -m 'Add feature').
+Push to your branch (git push origin feature-name).
+Create a pull request.
+License
+This project is licensed under the MIT License. See the LICENSE file for details.
 
-- [Final Source Code](https://www.theblockchaincoders.com/sourceCode/how-to-build-and-deploy-your-token-presale-dapp-(ico)-in-2024-2025)
+Contact
+If you have any questions or would like to discuss this project, feel free to reach out:
 
-#### Setup Video
-
-- [Final Code Setup video](https://youtu.be/rtDfE8R9Yxk)
-
-```https://code.visualstudio.com/download
-  WATCH: Setup & Demo Of Project
-```
-
-#### Install Vs Code Editor
-
-```https://code.visualstudio.com/download
-  GET: VsCode Editor
-```
-
-#### NodeJs & NPM Version
-
-```https://nodejs.org/en/download
-  NodeJs: v18.12.1
-  NPM: 8.19.2
-```
-
-#### Clone Starter File
-
-```https://github.com/daulathussain/Airdrop-Crypto-Starter-File
-  GET: Project Starter File Download
-```
-
-All you need to follow the complete project and follow the instructions which are explained in the tutorial by Daulat
-
-## Final Code Instruction
-
-If you download the final source code then you can follow the following instructions to run the Dapp successfully
-
-#### What You Will Get
-
-Once you download the final source code, you will get a ZIP file, then you will have 2 FOLDERS & README file which contain all the instructions to run the project and set video
-
-#### Setup Video
-
-```https://code.visualstudio.com/download
-  WATCH: Setup & Demo Of Project
-```
-
-#### Final Source Code
-
-```https://www.theblockchaincoders.com/SourceCode
-  Download the Final Source Code
-```
-
-#### Install Vs Code Editor
-
-```https://code.visualstudio.com/download
-  GET: VsCode Editor
-```
-
-#### NodeJs & NPM Version
-
-```https://nodejs.org/en/download
-  NodeJs: v18.12.1
-  NPM: 8.19.2
-```
-
-#### Test Faucets
-
-Alchemy will provide you with some free test faucets which you can transfer to your wallet address for deploying the contract
-
-```https://faucet.polygon.technology/
-  Get: Free Test Faucets
-  URL : https://faucet.polygon.technology/
-```
-
-#### RemixID
-
-We are using RemixID for deploying the contract and generation of the ABI in the project, but you can use any other tools like Hardhat, etc.
-
-```https://remix-project.org
-  OPEN: RemixID
-  URL: https://remix-project.org
-```
-
-#### Polygon Mumbai
-
-```https://amoy.polygonscan.com/
-  OPEN: Polygon Amoy
-  URL: https://amoy.polygonscan.com/
-```
-
-## Important Links
-
-- [Get Pro Blockchain Developer Course](https://www.theblockchaincoders.com/pro-nft-marketplace)
-- [Support Creator](https://bit.ly/Support-Creator)
-- [All Projects Source Code](https://www.theblockchaincoders.com/SourceCode)
-
-## Authors
-
-- [@theblockchaincoders.com](https://www.theblockchaincoders.com/)
-- [@consultancy](https://www.theblockchaincoders.com/consultancy)
-- [@youtube](https://www.youtube.com/@daulathussain)
+LinkedIn: Precious Ogbonnaya
+Email: ppedwards895@gmail.com
