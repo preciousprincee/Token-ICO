@@ -24,7 +24,7 @@ Hardhat for smart contract development and deployment.
 Clone the Repository
 bash
 Copy code
-git clone https://github.com/your-username/token-ico-dapp.git  
+git clone https://github.com/preciousprincee/token-ico.git  
 cd token-ico-dapp  
 Install Dependencies
 bash
